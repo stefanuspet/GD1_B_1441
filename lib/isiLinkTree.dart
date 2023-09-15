@@ -17,24 +17,24 @@ class _IsiLinkTreeState extends State<IsiLinkTree> {
       children: [
         const CardForlinkTree(
           icon: Icons.phone,
-          text: '+91 123 345 789',
+          text: '+62 821 3856 6615',
         ),
         const CardForlinkTree(
           icon: Icons.email,
-          text: 'broman@gmail.com',
+          text: 'petrapambudi@gmail.com',
         ),
         CardForlinkTree(
-          text: 'Instagram',
-          icon: FontAwesomeIcons.instagram,
+          text: 'Youtube',
+          icon: FontAwesomeIcons.youtube,
           onPressed: () {
-            Direct.launchURL('https://wwww.instagram.com/');
+            Direct.launchThisURL('https://www.Youtube.com/');
           },
         ),
         CardForlinkTree(
           icon: FontAwesomeIcons.facebook,
           text: 'facebook',
           onPressed: () {
-            Direct.launchURL('https://www.facebook.com/');
+            Direct.launchThisURL('https://www.facebook.com/');
           },
         )
       ],

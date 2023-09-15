@@ -48,11 +48,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               const Text(
-                'Sakshi',
+                'Petra',
                 style: kTextStyle1,
               ),
               const Text(
-                'FLUTTER DEVELOPER',
+                '210711441',
                 style: kTextStyle2,
               ),
               kSizeBox,

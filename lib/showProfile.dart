@@ -9,31 +9,31 @@ class ShowProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-      backgroundColor: kColor,
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              margin: const EdgeInsets.only(top: 50),
-              child: Row(
-                children: [
-                kSizeBox2,
-                const CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage('images/download.jpg')),
-                  kSizeBox2,
-                  Container(
-                    child: const Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+          backgroundColor: kColor,
+          body: Center(
+            child: Column(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 50),
+                  child: Row(
                     children: [
-                      Text('Sakshi', style: kTextStyle4),
-                      Text('FLUTTER DEVELOPER', style: kTextStyle5),
+                      kSizeBox2,
+                      const CircleAvatar(
+                          radius: 50,
+                          backgroundImage: AssetImage('images/download.jpg')),
+                      kSizeBox2,
+                      Container(
+                        child: const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Petra', style: kTextStyle4),
+                            Text('210711441', style: kTextStyle5),
+                          ],
+                        ),
+                      )
                     ],
                   ),
-                  )
-              ],
-              ),
-            ),
+                ),
                 Container(
                   margin: const EdgeInsets.only(top: 50),
                   child: Row(
@@ -68,16 +68,16 @@ class ShowProfile extends StatelessWidget {
                 ),
                 kSizeBox,
                 const IsiShowProfile()
-          ],
-        ),
-    ),
-            floatingActionButton: FloatingActionButton(
-              onPressed: (){
+              ],
+            ),
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
               Navigator.pop(context);
             },
             backgroundColor: Colors.teal,
             child: const Icon(Icons.arrow_back),
-            )),
+          )),
     );
   }
 }
